@@ -18,8 +18,4 @@ const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 export const db = getDatabase(app);
 export const auth = getAuth(app);
 
-// In a real scenario, you'd connect to the emulator here if in dev mode
-// if (process.env.NODE_ENV === "development") {
-//   connectDatabaseEmulator(db, "localhost", 9000);
-//   connectAuthEmulator(auth, "http://localhost:9099");
-// }
+
